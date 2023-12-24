@@ -64,6 +64,7 @@ p span {
 }
 
 p a {
+  width: 2em;
   text-decoration: none;
   font-family: var(--font);
   color: var(--primary-accent);
@@ -74,6 +75,26 @@ p a {
 p a:hover {
   color: var(--primary);
   text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+}
+
+.github p {
+    width: fit-content;
+    background: var(--back-accent);
+    padding: 4px;
+    border-radius: 4px;
+    box-shadow: 0 2px 2px 0 var(--shadow);
+    color: var(--fore);
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.github:hover {
+    text-decoration: underline;
+    color: var(--primary);
 }
 
 .create-task {
