@@ -1,6 +1,6 @@
 {
-    "name": "Flask Replit Extension Starter",
-    "description": "A starter template for a Replit Extension with Flask",
+    "name": "To-Do Extension",
+    "description": "A To-Do app extension made using Flask, so you can plan your programming projects.",
     "version": "0",
     tools: [
 
@@ -11,5 +11,6 @@
         }
 
     ],
-    icon: "/replit.svg"
+    icon: "/replit.svg",
+    longDescription: "# To-Do Extension\n\nAn extension made in Replit with the [Flask Extension Starter](https://replit.com/@SalladShooter/Flask-Extension-Starter?v=1#README.md)\n\n___\n\nTo add a task click on the button that says <kbd>Add Task</kbd> and enter the name.\n\nOnce you finish a task click on it and it crosses through.\n\nIf you want to remove a task click the <kbd>X</kbd> button."
 }

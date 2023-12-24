@@ -11,6 +11,9 @@ hidden = ["venv", ".config", "**/__pycache__", "**/.mypy_cache", "**/*.pyc", "po
 # Enables the Extensions Devtools
 [extension]
 isExtension = true
+outputDirectory = "."
+buildCommand = " "
+extensionID = "2a2e3ffa-f587-4d88-999c-fffcca126756"
 
 # Specifies which nix channel to use when building the environment.
 [nix]
