@@ -1,16 +1,11 @@
-# Flask Replit Extension Starter
+# To-Do Extension
 
-This is a Flask Extension Starter made with [Flask](https://pypi.org/project/Flask/).
+An extension made in Replit with the [Flask Extension Starter](https://replit.com/@SalladShooter/Flask-Extension-Starter?v=1#README.md)
 
-Thanks to @QwertyQwerty88 for making the original [Python Extension Starter](replit.com/@QwertyQwerty88/Python-Extension).
+___
 
-## Getting Started
+To add a task click on the button that says <kbd>Add Task</kbd> and enter the name.
 
-1. Fork this Repl if you have not done so already
-2. Click the <kbd>Extension Devtools</kbd> button in the top-right corner of the workspace
-3. Under Tools, click <kbd>Preview</kbd>
-4. Start developing your extension!
+Once you finish a task click on it and it crosses through.
 
-## Documentation
-
-After opening the Extension Devtools, click the <kbd>Docs</kbd> button to read the Extension documentation or go to [docs.replit.com/extensions](https://docs.replit.com/extensions).
+If you want to remove a task click the <kbd>X</kbd> button.
