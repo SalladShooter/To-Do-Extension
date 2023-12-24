@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --back: #212425;
+        --back-accent: #313435;
+        --fore: white;
+        --primary: #1c96c0;
+        --primary-accent: #4cc6f0;
+        --danger: #f04a64;
+        --shadow: rgba(0,0,0,0.3);
+        --font: 'Poppins', Arial; 
+        --font-size: 1.5em;
+    }
+}
+@media (prefers-color-scheme: light) {
+    :root {
+        --back: white;
+        --back-accent: #eee;
+        --fore: black;
+        --primary: #1c96c0;
+        --primary-accent: #4cc6f0;
+        --danger: #f04a64;
+        --shadow: rgba(0,0,0,0.3);
+        --font: 'Poppins', Arial; 
+        --font-szie: 1.5em;
+    }
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    background: var(--back);
+    color: var(--fore);
+    font-family: var(--font);
+}
+
+h1 {
+    text-align: center;
+    margin: auto;
+    border-bottom: 2px solid var(--primary);
+    width: fit-content;
+    padding: 2px;
+    font-size: calc(1em + 1rem);
+}
+
+hr {
+  width: 95%;
+  max-width: 510px;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid var(--primary);
+}
+
+p {
+  text-align: center;
+  margin: auto;
+  margin-top: 1em;
+}
+
+p span {
+  color: red;
+  transform: translateY(25%);
+}
+
+p a {
+  text-decoration: none;
+  font-family: var(--font);
+  color: var(--primary-accent);
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+p a:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.create-task {
+    text-align: center;
+    justify-content: center;
+    font-size: var(--font-size);
+    position: relative;
+    margin: auto;
+    margin-top: 3em;
+    width: 92.5%;
+    max-width: 500px;
+    aspect-ratio: 4 / 1;
+    background: var(--back-accent);
+    border-radius: 14px;
+    padding: 5px;
+    box-shadow: 0 5px 5px 0 var(--shadow);
+    transition: 0.3s ease-in-out all;
+}
+
+.create-task:hover {
+    box-shadow: 0 10px 10px 0 var(--shadow);
+    background: linear-gradient(to left top, var(--primary), var(--primary-accent));
+}
+
+.create-task:hover span {
+  color: var(--fore);
+  transform: scale(1.05);
+  box-shadow: 0 2px 2px 0 var(--shadow);
+}
+
+.create-task p {
+    text-align: center;
+    justify-content: center;
+    font-size: calc(0.5em + 1rem);
+}
+
+.create-task span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: calc(var(--font-size) - 0.5em);
+    margin: 4px;
+    color: var(--primary);
+    border-radius: 50%;
+    transform: scale(1);
+    box-shadow: 0 0 0 0 var(--shadow);
+    transition: 0.3s ease-in-out all;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: var(--font-size);
+  position: relative;
+  margin: auto;
+  margin-top: 1em;
+  width: 92.5%;
+  max-width: 500px;
+  aspect-ratio: 4 / 1;
+  background: var(--back-accent);
+  border-radius: 14px;
+  padding: 5px;
+  box-shadow: 0 5px 5px 0 var(--shadow);
+  transition: 0.3s ease-in-out all;
+}
+
+.task:last-child {
+  margin-bottom: 5em;
+}
+
+.task.completed {
+    text-decoration: line-through;
+}
+
+.cancel-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: calc(var(--font-size) - 0.5em);
+  margin: 4px;
+  color: var(--danger);
+  border-radius: 50%;
+  cusor: pointer;
+  transform: scale(1);
+  box-shadow: 0 0 0 0 var(--shadow);
+  transition: 0.3s ease-in-out all;
+}
+
+.cancel-icon:hover {
+  transform: scale(1.05);
+  box-shadow: 0 2px 2px 0 var(--shadow);
+}

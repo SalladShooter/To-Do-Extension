@@ -1,0 +1,15 @@
+{
+    "name": "Flask Replit Extension Starter",
+    "description": "A starter template for a Replit Extension with Flask",
+    "version": "0",
+    tools: [
+
+        {
+            name: "To-Do Extension",
+            icon: "/replit.svg",
+            handler: "/"
+        }
+
+    ],
+    icon: "/replit.svg"
+}
