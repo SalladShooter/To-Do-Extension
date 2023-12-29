@@ -6,7 +6,7 @@
 
         {
             name: "To-Do Extension",
-            icon: "/replit.svg",
+            icon: "//replit.svg",
             handler: "/"
         }
 
